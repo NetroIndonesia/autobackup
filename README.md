@@ -1,44 +1,40 @@
-Tentu! Berikut adalah contoh `README.md` yang dapat Anda gunakan untuk proyek Node.js Anda di GitHub:
+Got it! Here's a more concise version with fewer backticks:
 
-```
+```markdown
 # Automated Backup System
 
 ## Overview
 
-This Node.js application automates the process of backing up a specified folder and handling the backup file based on its size. The backup can be uploaded to File.io for temporary storage or sent directly to a webhook if the file size is below a specified threshold.
+This Node.js application automates folder backups and handles large files by uploading them to File.io or sending smaller files directly to a webhook. Configuration is flexible via JSON or user input, and backups are scheduled using cron jobs.
 
 ## Features
 
-- **Automated Backup:** Creates a compressed backup of a specified folder.
-- **File Size Handling:** Uploads backups larger than a specified size to File.io or sends smaller backups directly to a webhook.
-- **Configurable:** Allows configuration through a JSON file or user input.
-- **Scheduled Backups:** Uses cron jobs to schedule backups at specified intervals.
+- **Automated Backups:** Compresses and backs up a specified folder.
+- **File Size Management:** Uploads large backups to File.io or sends smaller ones directly to a webhook.
+- **Configurable:** Set up through `config.json` or user prompts.
+- **Scheduled:** Uses cron jobs for regular backups.
 
 ## Installation
 
-1. **Clone the repository:**
+1. Clone the repository:
+   ```
+   git clone https://github.com/NetroIndonesia/autobackup.git
+   ```
 
-    ```
-    git clone https://github.com/NetroIndonesia/autobackup.git
-    ```
+2. Navigate to the project directory:
+   ```
+   cd automated-backup-system
+   ```
 
-2. **Navigate to the project directory:**
-
-    ```
-    cd automated-backup-system
-    ```
-
-3. **Install dependencies:**
-
-    ```
-    npm install
-    ```
+3. Install dependencies:
+   ```
+   npm install
+   ```
 
 ## Configuration
 
-The application reads configuration from `config.json` or from user input. The `config.json` file should be in the following format:
-
-```
+Configure via `config.json` or user input. The `config.json` format:
+```json
 {
     "folderToBackup": "path/to/folder",
     "backupFolder": "./backups",
@@ -46,48 +42,38 @@ The application reads configuration from `config.json` or from user input. The `
         "https://your-webhook-url1",
         "https://your-webhook-url2"
     ],
-    "cooldownDuration": "*/60 * * * *" // Cron expression for scheduling
+    "cooldownDuration": "*/60 * * * *"
 }
 ```
 
-**Parameters:**
-
-- `folderToBackup`: Path to the folder you want to back up.
-- `backupFolder`: Path where backups will be stored.
-- `webhooks`: List of webhook URLs to which backups will be sent.
-- `cooldownDuration`: Cron expression to schedule backups.
-
 ## Usage
 
-1. **Start the application:**
+1. Start the application:
+   ```
+   node index.js
+   ```
 
-    ```
-    node index.js
-    ```
+2. Follow the prompts or ensure `config.json` is set up correctly.
 
-2. **Follow the prompts** or ensure `config.json` is correctly configured.
-
-3. **Monitor output:** The application will log the status of backups and any issues encountered.
+3. Monitor the application output for status and errors.
 
 ## Cron Jobs
 
-The backup scheduler uses the `node-cron` library to run backups at intervals specified by the `cooldownDuration` parameter. The default value is set to every hour.
+Backups are scheduled using the `node-cron` library based on the `cooldownDuration` parameter, defaulting to every hour.
 
 ## Error Handling
 
-- If a backup process fails, an error message will be logged.
-- If a backup file is too large for direct webhook upload, it will be uploaded to File.io.
+Errors during backup or file handling are logged. Large files are uploaded to File.io if direct webhook upload is not possible.
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+Licensed under the MIT License. See [LICENSE](LICENSE) for details.
 
 ## Contributing
 
-Contributions are welcome! Please fork the repository and submit a pull request with your improvements.
+Contributions are welcome! Fork the repository and submit a pull request.
 
 ## Contact
 
-For any questions or issues, please open an issue on the [Telegram Channel](https://t.me/htfgtps).
-
+For questions, open an issue on the [Telegram Channel](https://t.me/htfgtps).
 ```
