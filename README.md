@@ -18,19 +18,19 @@ This Node.js application automates the process of backing up a specified folder 
 
 1. **Clone the repository:**
 
-    ```bash
-    git clone https://github.com/your-username/automated-backup-system.git
+    ```
+    git clone https://github.com/NetroIndonesia/autobackup.git
     ```
 
 2. **Navigate to the project directory:**
 
-    ```bash
+    ```
     cd automated-backup-system
     ```
 
 3. **Install dependencies:**
 
-    ```bash
+    ```
     npm install
     ```
 
@@ -38,7 +38,7 @@ This Node.js application automates the process of backing up a specified folder 
 
 The application reads configuration from `config.json` or from user input. The `config.json` file should be in the following format:
 
-```json
+```
 {
     "folderToBackup": "path/to/folder",
     "backupFolder": "./backups",
@@ -61,7 +61,7 @@ The application reads configuration from `config.json` or from user input. The `
 
 1. **Start the application:**
 
-    ```bash
+    ```
     node index.js
     ```
 
