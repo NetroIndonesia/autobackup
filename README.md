@@ -1,6 +1,4 @@
-Got it! Here's a more concise version with fewer backticks:
-
-```markdown
+```
 # Automated Backup System
 
 ## Overview
