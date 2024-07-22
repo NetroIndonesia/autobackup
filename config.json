@@ -1,0 +1,9 @@
+{
+    "folderToBackup": "./",
+    "backupFolder": "./backups",
+    "webhooks": [
+        "",
+        ""
+    ],
+    "cooldownDuration": "*/60 * * * *"
+}
