@@ -1,4 +1,4 @@
-```
+
 # Automated Backup System
 
 ## Overview
@@ -74,4 +74,3 @@ Contributions are welcome! Fork the repository and submit a pull request.
 ## Contact
 
 For questions, open an issue on the [Telegram Channel](https://t.me/htfgtps).
-```
