@@ -73,4 +73,7 @@ Contributions are welcome! Fork the repository and submit a pull request.
 
 ## Contact
 
-For questions, open an issue on the [Telegram Channel](https://t.me/htfgtps).
+### Social Media: 📡    
+Join me on Telegram.
+
+[![Telegram Badge](https://img.shields.io/badge/Telegram-blue?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/htfgtps)
