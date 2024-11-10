@@ -21,7 +21,7 @@ This Node.js application automates folder backups and handles large files by upl
 
 2. Navigate to the project directory:
    ```
-   cd autobackup
+   cd autobackup-main
    ```
 
 3. Install dependencies:
